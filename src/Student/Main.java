@@ -23,10 +23,18 @@ public class Main {
             }
             System.out.println("Upisite prezime studenta:");
             String prezime = scanner.nextLine();
+            if (prezime.equalsIgnoreCase("quit")) {
+                System.out.println("Kraj upisa");
+                break;
+            }
 
 
             System.out.println("Upisite ocenu studenta:");
             String ocena = scanner.nextLine();
+            if (ocena.equalsIgnoreCase("quit")) {
+                System.out.println("Kraj upisa");
+                break;
+            }
             studenti.add(new Student(ime, prezime, ocena));
             int o = Integer.parseInt(ocena);
 

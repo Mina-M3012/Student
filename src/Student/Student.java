@@ -9,7 +9,7 @@ public class Student {
 
     private String ime;
     private String prezime;
-    String  ocena;
+    private String  ocena;
 
     public Student(String ime, String prezime, String ocena) {
         this.ime = ime;
